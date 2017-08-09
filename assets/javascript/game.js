@@ -45,11 +45,13 @@ $(document).ready(function() {
 	};
 	var won = function() {
   	wins++;
+  	$('#wins').text(wins);
   	resetGame();
 	};
 
 	var lost = function() {
   	losses++;
+  	$('#losses').text(losses);
   	resetGame();
 	};
 
@@ -75,9 +77,9 @@ $(document).ready(function() {
 		score = score + btn1;
 			console.log("score = " + score);
 		$("#score").text(score);
-			if (score === randomNumber) {
+			if (Number(score) === random) {
 				won();
-		} else if (score > randomNumber) {
+		} else if (Number(score) > random) {
 			lost();
 		}
 	})
@@ -86,9 +88,9 @@ $(document).ready(function() {
 		score = score + btn2;
 			console.log("score = " + score);
 		$("#score").text(score);
-			if (score === randomNumber) {
+			if (Number(score) === random) {
 				won();
-		} else if (score > randomNumber) {
+		} else if (Number(score) > random) {
 			lost();
 		}
 	})
@@ -97,9 +99,9 @@ $(document).ready(function() {
 		score = score + btn3;
 			console.log("score = " + score);
 		$("#score").text(score);
-			if (score === randomNumber) {
+			if (Number(score) === random) {
 				won();
-		} else if (score > randomNumber) {
+		} else if (Number(score) > random) {
 			lost();
 		}
 	})
@@ -108,9 +110,9 @@ $(document).ready(function() {
 		score = score + btn4;
 			console.log("score = " + score);
 		$("#score").text(score);
-			if (score === randomNumber) {
+			if (Number(score) === random) {
 				won();
-		} else if (score > randomNumber) {
+		} else if (Number(score) > random) {
 			lost();
 		}	})
  
