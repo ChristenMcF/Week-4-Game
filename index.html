@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header>	
+			<h1>Crystal Collector!</h1>
+		</header>
+		
+			<div class="instructions">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>By clicking on a crystal below, you will add points to your total score.</p>
+				<p>You win the game by matching your total score to the random number.</p>
+				<p>You lose if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time the game starts, the value of each crystal and the random number will change.</p>
+			</div>
+		
+			<div class="row">
+				<div class= "col-md-2 col-sm-6">
+					<div class="random">
+						<h4>Target Number:</h4>
+							<div id=randomNumber>
+								<h4>0</h4>
+							</div>
+					</div>
+				</div>
+					
+					<div class="col-md-10 col-sm-6">
+						<div class="tally">
+							<div class="tallyWin">
+								<h4>Wins:</h4>
+									<div id="wins">
+										<h4>0</h4>
+									</div>
+								</div>
+				
+							<div class="tallyLoss">
+								<h4>Losses:</h4>
+									<div id="losses">
+										<h4>0</h4>
+									</div>
+								</div>
+							</div>
+					</div>	
+			</div>
+		<div class="yourScore">
+			<h4>Your Total Score:</h4>
+				<div id="score">
+					<h4>0</h4>
+				</div>
+			</div>
+		</div>
+		
+		<div class="crystal">
+			<button id="btn1"><img src="assets/images/gem-1.jpg"></button>
+			<button id="btn2"><img src="assets/images/gem-2.jpg"></button>
+			<button id="btn3"><img src="assets/images/gem-3.jpg"></button>
+			<button id="btn4"><img src="assets/images/gem-4.jpg"></button>
+		</div>
+		
+		
+</div>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html>
